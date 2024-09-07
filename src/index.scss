@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+.title {
+    color: #1F1F1F;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+// Category Menu style
+.category__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+// Button styles
+
+.btn {
+    padding: 10px 20px;
+    background-color: #F7F7F7;
+    border: none;
+    color: #1F1F1F;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &.primary {
+        background-color: #1F1F1F;
+        color: #ffffff;
+    }
+
+    &.secondary {
+        background-color: #F7F7F7;
+        color: #676767;
+    }
+}
+
+.category__heading {
+    margin-bottom: 20px;
+    color: rgb(31, 31, 31);
+}
+
+// Category Items
+.category__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.category__card {
+    width: 176px;
+    min-height: 106px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    position: relative;
+    border: 2px solid rgb(248, 248, 248);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &-image {
+        width: 100%;
+        height: 64px;
+        object-fit: contain;
+    }
+
+    &-price {
+        color: #1F1F1F;
+        background-color: white;
+        padding: 5px 15px;
+        width: max-content;
+        border-radius: 5px;
+        position: absolute;
+        font-weight: 600;
+        font-family: sans-serif;
+        top: 6px;
+        left: 6px;
+    }
+
+    &-title {
+        color: rgb(31, 31, 31);
+        font-weight: 500;
+        text-align: left;
+        padding: 5px 10px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
